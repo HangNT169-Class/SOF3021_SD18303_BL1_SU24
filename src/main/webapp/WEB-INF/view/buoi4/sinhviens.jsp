@@ -12,7 +12,7 @@
         <button type="submit">Search</button>
     </form>
     <br/>
-    <button><a href="">Add Student</a></button>
+    <button><a href="/sinh-vien/view-add">Add Student</a></button>
     <tr>
         <th>STT</th>
         <th>MSSV</th>
@@ -37,8 +37,8 @@
 <%--                <a href="/sinh-vien/remove?a=${sv.mssv}">Delete</a>--%>
                 <%--   J5: /gia tri can lay tren duong dan => controller: @Pathvariable     --%>
                 <a href="/sinh-vien/remove/${sv.mssv}">Delete</a>
-                <a href="/sinh-vien/view-update">Update</a>
-                <a href="/sinh-vien/detail ">Detail</a>
+                <a href="/sinh-vien/view-update/${sv.mssv}">Update</a>
+                <a href="/sinh-vien/detail/${sv.mssv}">Detail</a>
             </td>
         </tr>
     </c:forEach>

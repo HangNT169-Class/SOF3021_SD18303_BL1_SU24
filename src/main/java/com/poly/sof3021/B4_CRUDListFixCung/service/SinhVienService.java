@@ -22,11 +22,24 @@ public class SinhVienService {
         return lists;
     }
 
-    public void xoaSinhVien(String ma){
+    public void xoaSinhVien(String ma) {
         for (int i = 0; i < lists.size(); i++) {
-            if(lists.get(i).getMssv().equalsIgnoreCase(ma)){
+            if (lists.get(i).getMssv().equalsIgnoreCase(ma)) {
                 lists.remove(i); // XOA DOI TUONG TIM THAY
             }
         }
+    }
+
+    public void addSinhVien(SinhVien sv) {
+        lists.add(sv);
+    }
+
+    public SinhVien detailSinhVien(String ma) {
+        for (int i = 0; i < lists.size(); i++) {
+            if (lists.get(i).getMssv().equalsIgnoreCase(ma)) {
+                return lists.get(i);
+            }
+        }
+        return null;
     }
 }

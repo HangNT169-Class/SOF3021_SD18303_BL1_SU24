@@ -13,7 +13,7 @@
 <body>
 
 <form action="">
-    MSSV: <input type="text" name="mssv"  />
+    MSSV: <input type="text" name="mssv" value="${sv1.mssv}" />
     <br/>
     Tên: <input type="text" name="ten" />
     <br/>
