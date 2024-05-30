@@ -24,10 +24,10 @@ public class Category1 {
     @Column(name = "id")
     private Long id1;
 
-    @Column(name = "catecory_code")
+    @Column(name = "category_code")
     private String categoryCode1;
 
-    @Column(name = "catecory_name")
+    @Column(name = "category_name")
     private String catecoryName;
 
 }
